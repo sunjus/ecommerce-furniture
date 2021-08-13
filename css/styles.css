@@ -13,7 +13,7 @@
   --green: rgb(0, 46, 37);
   --grey1: rgb(107, 113, 119);
   --grey2: rgb(255, 255, 255);
-  --peach: RGB(244, 163, 132);
+  --peach: rgb(244, 163, 132);
 }
 
 html {
@@ -79,7 +79,7 @@ Header
   =================
   Navigation
   =================
-  */
+*/
 .navigation {
   height: 6rem;
   line-height: 6rem;
@@ -117,7 +117,6 @@ Header
   cursor: pointer;
 }
 /* Icons */
-
 .icon {
   cursor: pointer;
   font-size: 2.5rem;
@@ -194,7 +193,19 @@ Header
   }
 
   .top-nav div {
-    justify-content: center;
-    height: 3rem;
+    display: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .top-nav div {
+    justify-content: space-between;
+    height: 3.5rem;
+  }
+  .top-nav div span {
+    display: none;
   }
 }
