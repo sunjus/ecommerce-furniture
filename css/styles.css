@@ -13,6 +13,7 @@
   --green: rgb(0, 46, 37);
   --grey1: rgb(107, 113, 119);
   --grey2: rgb(255, 255, 255);
+  --grey3: rgb(251, 247, 237);
   --peach: rgb(244, 163, 132);
 }
 
@@ -148,14 +149,15 @@ Header
 @media only screen and (max-width: 768px) {
   .nav-list {
     position: fixed;
-    top: 10.5%;
+    top: 13%;
     left: -35rem;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 04 0.2);
     background-color: white;
     height: 100%;
     width: 0%;
+    line-height: 4rem;
     max-width: 30rem;
     z-index: 100;
     transition: all 300ms ease-in-out;
@@ -167,12 +169,12 @@ Header
   }
 
   .nav-list .nav-item {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     width: 100%;
   }
 
   .nav-list .nav-link {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--black);
   }
 
@@ -233,13 +235,148 @@ Header
     display: none;
   }
 }
-@media only screen and (max-width: 320px) {
-  .nav-list {
-    top: 16%;
-  }
-}
+
 /* 
 =================
 Hero Area
 =================
+*/
+.hero,
+.hero .glide__sildes {
+  background-color: var(--grey3);
+  height: 640px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .left {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  z-index: 999;
+  transition: all 2000ms ease-in-out;
+}
+
+.hero .left span {
+  border-bottom: 1px solid black;
+  font-weight: 500;
+}
+
+.hero .left p {
+  margin: 0 0 1rem;
+}
+
+.hero .left .hero-btn {
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+}
+
+.hero .right {
+  height: 100%;
+  text-align: center;
+}
+
+.hero .right img {
+  width: 100%;
+  height: 95vh;
+  z-index: -999;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero .left {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+  }
+  .hero .left .hero-btn {
+    padding: 1rem 2.5rem;
+    margin: 0.5rem 0;
+  }
+}
+/*
+============================
+Main : Advert
+============================
+*/
+.section {
+  padding: 8rem 0 5rem 0;
+  overflow: hidden;
+}
+
+.advert-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 114rem;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.advert-box {
+  max-width: 37rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.advert-box:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.advert-box img {
+  width: 36.5rem;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  transition: all 2s ease;
+}
+
+.advert-box .ad-box:hover img {
+  transform: scale(1.1);
+}
+
+.advert-box .content {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--grey3);
+  opacity: 0.8;
+  width: 30rem;
+  height: 6rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 5px 5px 0px rgba(37, 59, 112, 0.2);
+}
+
+.advert-box .content h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .advert-box img {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  .advert-box img {
+    width: 25rem;
+  }
+}
 */
