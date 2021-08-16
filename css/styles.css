@@ -67,14 +67,14 @@ Header
 
 .top-nav div {
   justify-content: space-between;
-  height: 4.5rem;
+  height: 4rem;
+  line-height: 4rem;
 }
 
 .top-nav a {
   color: var(--white);
   padding: 0 0.5rem;
 }
-
 /* 
   =================
   Navigation
@@ -83,6 +83,8 @@ Header
 .navigation {
   height: 6rem;
   line-height: 6rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-center {
@@ -146,7 +148,7 @@ Header
 @media only screen and (max-width: 768px) {
   .nav-list {
     position: fixed;
-    top: 12%;
+    top: 11%;
     left: -35rem;
     flex-direction: column;
     align-items: flex-start;
@@ -209,3 +211,8 @@ Header
     display: none;
   }
 }
+/* 
+=================
+Hero Area
+=================
+*/
