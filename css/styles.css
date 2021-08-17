@@ -647,7 +647,7 @@ Banner
 
 .banner .left {
   position: relative;
-  z-index: 999;
+  z-index: 1;
   text-align: center;
   top: 20%;
 }
