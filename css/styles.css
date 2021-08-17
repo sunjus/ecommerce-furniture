@@ -506,7 +506,7 @@ Products : New Arrrivals
 
 .product-item .icons {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -516,7 +516,7 @@ Products : New Arrrivals
 .product-item .icons li {
   background-color: var(--white);
   text-align: center;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.4rem;
   font-size: 2.2rem;
   border-radius: 50%;
   cursor: pointer;
@@ -524,6 +524,11 @@ Products : New Arrrivals
   transform: translateY(20px);
   visibility: hidden;
   opacity: 0;
+}
+
+.product-item .icons .bx {
+  padding: 0;
+  margin: 0;
 }
 
 .product-item .icons li:first-child {
@@ -684,6 +689,78 @@ Banner
   }
   .banner h1 {
     font-size: 3.5rem;
+  }
+}
+/* 
+==========================
+Contact
+==========================
+ */
+.contact {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 5rem 5rem;
+}
+
+.contact .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contact .row .col h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact .row .col p {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.contact form div {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact form input {
+  font-family: "Roboto", sans-serif;
+  text-indent: 2rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  border: none;
+  box-shadow: 1px 2px 3px 1px rgb(107, 113, 119);
+}
+
+.contact form a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--green);
+  color: white;
+  padding: 1.2rem 3rem;
+}
+
+@media only screen and (max-width: 996px) {
+  .contact {
+    padding: 3rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+  }
+
+  .contact form div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .contact {
+    padding: 3rem 2rem;
   }
 }
 /*
