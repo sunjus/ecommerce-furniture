@@ -1152,3 +1152,154 @@ Popup
     padding: 0.5rem;
   }
 }
+/*
+=======================
+Cart
+=======================
+*/
+.cart {
+  margin: 10rem auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 0.5rem;
+  color: var(--grey3);
+  background-color: var(--green);
+  font-weight: normal;
+}
+
+td {
+  padding: 1rem 0.5rem;
+}
+
+td input {
+  width: 5rem;
+  height: 3rem;
+  padding: 0.5rem;
+}
+
+td a {
+  color: var(--black);
+  font-size: 1.8rem;
+  border: 1px solid var(--grey1);
+  border-radius: 50%;
+  padding: 0.1rem 0.4rem;
+  cursor: pointer;
+}
+
+td a:hover {
+  color: var(--peach);
+  border: 1px solid var(--peach);
+}
+
+td img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+
+.total-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid var(--green);
+  width: 100%;
+  max-width: 35rem;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+.checkout {
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--grey3);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 567px) {
+  .cart-info p {
+    display: none;
+  }
+  .cart-info {
+    align-items: center;
+  }
+}
+
+/*
+==================
+ Login Form 
+ =================
+*/
+.login-form {
+  padding: 5rem 0;
+  max-width: 50rem;
+  margin: 5rem auto;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form form h1 {
+  margin-bottom: 1rem;
+}
+.login-form form p {
+  margin-bottom: 2rem;
+}
+
+.login-form form label {
+  margin-bottom: 1rem;
+}
+
+.login-form form input {
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 3px 1px rgb(0, 46, 37);
+  outline: none;
+  padding: 1.5rem 0;
+  text-indent: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.login-form form input::placeholder {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+.login-form form .buttons {
+  margin-top: 1rem;
+}
+
+.login-form form button {
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  margin-right: 1.5rem;
+  background-color: var(--green);
+  color: var(--grey3);
+  cursor: pointer;
+}
+
+.login-form form p a {
+  color: dodgerblue;
+}
