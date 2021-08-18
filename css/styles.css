@@ -861,9 +861,9 @@ Contact
   }
 }
 /*
-======================
+==========================================
 Footer
-======================
+==========================================
 */
 
 .footer {
@@ -923,9 +923,9 @@ Footer
   }
 }
 /* 
-=================
+==============================================
 Popup
-=================
+==============================================
 */
 .popup {
   position: fixed;
@@ -1153,9 +1153,9 @@ Popup
   }
 }
 /*
-=======================
-Cart
-=======================
+==========================================
+Cart page
+==========================================
 */
 .cart {
   margin: 10rem auto;
@@ -1243,9 +1243,9 @@ td:last-child {
 }
 
 /*
-==================
- Login Form 
- =================
+============================================
+ Login page
+ ===========================================
 */
 .login-form {
   padding: 5rem 0;
@@ -1302,4 +1302,74 @@ td:last-child {
 
 .login-form form p a {
   color: dodgerblue;
+}
+
+/*
+========================================
+Product page
+========================================
+*/
+.section .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.products .top select {
+  font-family: "Poppin", sans-serif;
+  width: 20rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  appearance: none;
+  outline: none;
+}
+
+.products form {
+  position: relative;
+  z-index: 1;
+}
+
+.products form span {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .product select {
+    width: 10rem;
+  }
+}
+
+/*
+=======================================
+Pagination
+=======================================
+*/
+.pagination {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0 5rem 0;
+}
+
+.pagination span {
+  display: inline-block;
+  padding: 0;
+  width: 3rem;
+  text-align: center;
+  border: 1px solid var(--green);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.pagination span:hover {
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  color: var(--grey3);
 }
