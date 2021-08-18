@@ -7,9 +7,24 @@ I built it in order to have solid CSS and JS skills.
     - CSS
     - JavaScript
     
-### Features 
+## Features 
+  * Index page
     - Fixed Navigation
+    - Navigation bar with toggle effect
     - Responsive Carousel with Gilde.js
+    - Popup
+    
+   * Product page
+    - Pagination
+    - Sorting
+    
+   * Product Detail page
+    - Sorting
+    - Image zoom effect with zoomsl.js
+
+   * Cart page
+   * Sign Up page
+   * Login page
 
 ###  🚩[LIVE DEMO](https://sunjus-ecommerce-furniture.netlify.app/)
  
