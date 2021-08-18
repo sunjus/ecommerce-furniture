@@ -1373,3 +1373,131 @@ Pagination
   background-color: var(--green);
   color: var(--grey3);
 }
+/*
+=====================================
+Product Detail
+======================================
+*/
+.product-detail .detail {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 7rem;
+}
+
+.product-detail .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail .left .main {
+  text-align: center;
+  background-color: var(--grey3);
+  margin-bottom: 2rem;
+  height: 45rem;
+}
+
+.product-detail .left .main img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.product-detail .right span {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail .right h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.product-detail .right .price {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-detail .right div {
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.product-detail .right select {
+  font-family: "Poppin", sans-serif;
+  width: 20rem;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  appearance: none;
+  outline: none;
+}
+
+.product-detail form {
+  margin-bottom: 2rem;
+  z-index: 0;
+}
+
+.product-detail form span {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  z-index: 0;
+}
+
+.product-detail .form {
+  margin-bottom: 3rem;
+}
+
+.product-detail .form input {
+  padding: 0.8rem;
+  text-align: center;
+  width: 3.5rem;
+  margin-right: 2rem;
+}
+
+.product-detail .form .addCart {
+  background-color: var(--green);
+  padding: 0.7rem 4rem;
+  color: var(--grey3);
+  border: 1.5px dotted var(--grey3);
+}
+
+.product-detail h3 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 996px) {
+  .product-detail .left {
+    width: 30rem;
+    height: 45rem;
+  }
+
+  .product-detail .detail {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .product-detail .detail {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail .right {
+    margin-top: 1rem;
+  }
+
+  .product-detail .left {
+    width: 100%;
+    height: 45rem;
+  }
+
+  .product-detail .detail {
+    gap: 3rem;
+  }
+}
