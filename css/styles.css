@@ -261,6 +261,55 @@ Hero
   position: relative;
 }
 
+.hero .glide__bullet {
+  background-color: var(--green);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.hero .glide__arrow {
+  padding: 1.5rem 1.7rem;
+  opacity: 0;
+  border: none;
+  background-color: var(--green);
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+.hero .glide__arrow:hover {
+  background-color: var(--grey4);
+}
+
+.glide__arrow--left {
+  left: 20rem;
+}
+
+.glide__arrow--right {
+  position: absolute;
+  right: 20rem;
+}
+
+.hero:hover .glide__arrow {
+  opacity: 1;
+}
+
+.hero:hover .glide__arrow--left {
+  left: 23rem;
+}
+
+.hero:hover .glide__arrow--right {
+  right: 23rem;
+}
+
+.hero .glide__arrow svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--grey3);
+}
+
+.hero .glide__arrow {
+  border-radius: 50%;
+}
+
 .hero .center {
   display: flex;
   align-items: center;
@@ -305,6 +354,14 @@ Hero
   object-fit: cover;
 }
 
+@media only screen and (max-width: 1280px) {
+  .hero:hover .glide__arrow--left {
+    left: 7rem;
+  }
+  .hero:hover .glide__arrow--right {
+    right: 7rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .hero .left {
     top: 60%;
@@ -313,6 +370,20 @@ Hero
   .hero .left .hero-btn {
     padding: 1rem 2.5rem;
     margin: 0.5rem 0;
+  }
+  .hero:hover .glide__arrow--left {
+    left: 7rem;
+  }
+  .hero:hover .glide__arrow--right {
+    right: 7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero:hover .glide__arrow--left {
+    left: 3rem;
+  }
+  .hero:hover .glide__arrow--right {
+    right: 3rem;
   }
 }
 @media only screen and (max-width: 425px) {
