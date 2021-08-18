@@ -14,11 +14,11 @@ I built it in order to have solid CSS and JS skills.
     - Responsive Carousel with Gilde.js
     - Popup
     
-   * Product page
+  * Product page
     - Pagination
     - Sorting
     
-   * Product Detail page
+  * Product Detail page
     - Sorting
     - Image zoom effect with zoomsl.js
 
