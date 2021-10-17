@@ -826,7 +826,7 @@ Contact
   width: 100%;
   padding: 1.5rem 0;
   border: none;
-  box-shadow: 1px 2px 3px 1px rgb(107, 113, 119);
+  box-shadow: 1px 2px 3px 2px rgb(107, 113, 119);
 }
 
 .contact form a {
@@ -1501,3 +1501,71 @@ Product Detail
     gap: 3rem;
   }
 }
+
+/*
+:root {
+ --backgroundcolor: #dddddd;
+  --neonblue: #18dcff;
+  --electricblue: #7efff5;
+  --textcolor: #999999; 
+}
+
+body {
+background-color: var(--backgroundcolor);
+  height: 100vh; 
+ background-color: #ffe5f7;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), 
+  repeating-linear-gradient( #ff4cf711, #ff4cf799 ); 
+}
+
+#container {
+ margin: 100px;   
+}
+
+#myButton {
+ display: flex;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  border-radius: 8px;
+  border: 2px solid #fc6b36;
+  background-color: #fc6b36;
+  color: #fff;
+ box-shadow: 0 1px 1px 0 #2c303824, 0 2px 1px -1px #2c30381f,
+    0 1px 3px 0 #2c303833; 
+ height: 36px;
+  width: 100px;
+  transition: 400ms ease-in-out;  
+}
+
+
+ #myButton:hover {
+  height: 50px;
+  width: 150px;
+  font-size: 22px;
+  background-color: var(--neonblue);
+  border-color:var(--electricblue);
+  animation-name: coloring;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; 
+} 
+
+ #shadow {
+    margin:auto;
+  margin-top: 30px;
+  width: 80px;
+  height: 10px;
+  background-color: #B26363;
+  filter: blur(10px) saturate(70%) brightness(0.5) opacity(75%);
+  transition: 400ms ease-in-out; 
+} 
+
+ #container:hover #shadow{
+      margin-top: 50px;
+      width: 120px;
+      background-color: var(--neonblue);
+} */
